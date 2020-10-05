@@ -1,0 +1,260 @@
+*{
+    /* margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+            padding: 0;
+}
+
+.padre{
+    /* background: black; */
+    margin: 0;
+            padding: 0;
+}
+    .header{
+        background: red;
+        margin: 0;
+            padding: 0;
+    }
+        .barra1{
+            background: #1A1A1A;
+            height: 45px;
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            justify-content: flex-end;
+            border-top: 3px solid #AAD500;
+            
+        }
+            .logo{
+                /* background: green; */
+                width: 65px;
+                height: 102px;
+                margin-top: 0;
+                margin-right: 260px;
+                padding: 0;
+                
+            }
+                .logo_imagen{
+                    margin: 0;
+                    padding:0;
+                }
+            .navegacion{
+                 /* background: greenyellow;  */
+                 height: 50px;
+                width: 900px;
+                margin:0;
+                padding: 0;
+            }
+                .lista{
+                    list-style: none;
+                    display: flex;
+                    font-size: 10px;
+                    /* margin: 0;
+                    padding: 0; */
+                    color: #9B9B9B;
+                    margin-top: 13px;
+                    margin-left: 70px;
+                    
+                }
+                .lista li{
+                    margin-right: 5px;
+                    padding-right: 6px;
+                    letter-spacing: .075em;
+                    text-align: right;
+                   
+                }
+                .lista a{
+                    text-decoration: none;
+                    color: #9B9B9B;
+                }
+                .lista a:hover, .venta:hover{
+                    text-decoration: underline;
+                }
+
+                    .linea{
+                        border-right: 1px solid #9B9B9B; 
+                        margin-left: 5px;
+                    } 
+            .pais{
+                 /* background: blueviolet;  */
+                height: 40px;
+                width: 50px;
+                
+            }
+                .colombia{
+                    width: 20px;
+                    height: 20px;
+                   
+                    margin-top: 10px;
+                    
+                }
+        .barra2{
+            background: #FFFFFF;
+            margin:0;
+            padding:0;
+            height: 59px;
+            display: flex;
+            flex-direction: row;
+        }
+            .hamburguesa{
+                 /* background:red;  */
+                height: 59px;
+                width: 180px;
+                margin-left: 160px; 
+                display: flex;
+            }
+                .logo_hamburguesa{
+                    height: 40px;
+                    margin-top: 10px;
+                }
+                .categorias{
+                    margin-top: 22px;
+                    margin-left: 5px;
+                    font-size: 12px;
+                }
+            .busqueda{
+                /* background: blue; */
+                height: 59px;
+                width: 600px;
+            }
+                .busqueda input{
+                    height: 45px;
+                    margin-top: 6px;
+                    border-radius: 5px;
+                    background: transparent;
+                    border: 1px solid #E8E8E8;
+                    width: 590px; 
+                    padding-left: 50px;
+                }
+                
+                .icon{
+                    position: absolute;
+                    left: 350px;
+                    top: 52px;
+                }
+        .barra3{
+            background: #F5F5F6;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+        }
+            .titulo{
+                /* background: red; */
+                margin-left: 125px;
+                font-size: 20px;
+            }
+            .seguircompra{
+                /* background: blue; */
+                height: 40px;
+                margin-left: 100px;
+                width: 900px;
+                display:flex;
+            }
+            .seguircompra img{
+                margin-bottom: 2px;
+                margin-left: 7px; 
+            }
+            .rastrear_orden{
+                margin-right: 90px;
+            }
+
+.section{
+            /* background: red; */
+}
+    .caja_slider{
+        /* background: blue; */
+        height: 500px;
+    }
+
+        .slider{
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            position: relative;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        
+        }
+        
+        .slider img{
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all 0.6s;
+        }
+        .slider input[type="radio"]{
+            display: none;
+        }
+        
+        .slider input[type="radio"]:checked ~ img {
+            opacity: 1;
+        }
+       
+        .slider input[type="radio"] + label, p{
+            position: relative;
+            z-index: 50;
+            margin: 10px; 
+        
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            border: 2px solid black;   
+            cursor: pointer;           
+        }
+        
+        .slider input[type="radio"]:checked + label {
+           background: black;
+           border: 2px solid white;
+        }   
+    .galeria{
+        
+        margin-top: 50px;
+        margin-left: 30px;
+
+    }
+   
+    .galeria img:hover{
+        background-color: #C4CD58;
+        opacity: .6;
+    }
+    .galeria .img2{
+        margin-left: 5px;
+    }
+    .galeria .img3{
+        margin-left: 5px;
+    }
+    .galeria .img5{
+        margin-left: 3px;
+    }
+    .galeria .img6{
+        margin-left: 7px;
+        margin-top: 8px;
+    }
+    .compra{
+        margin-top: 90px;
+        margin-left: 30px;
+    }
+
+    .cajafooter{
+        border-top: 4px solid #AAD500;
+        background: #222222;
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+    }
